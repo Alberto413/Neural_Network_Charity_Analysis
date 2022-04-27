@@ -38,6 +38,8 @@ Yes, I was able to achieve the target model performance. The target was 75% and 
 
 <img width="760" alt="Screen Shot 2022-04-27 at 12 53 44 PM" src="https://user-images.githubusercontent.com/95304774/165578794-0cf0c3bd-5f12-49fe-bf46-984e3621e162.png">
 
+<img width="760" alt="Screen Shot 2022-04-27 at 1 02 35 PM" src="https://user-images.githubusercontent.com/95304774/165580384-046baaa5-cf6d-4d53-a2ea-3986572d5823.png">
+
 6.What steps did you take to try and increase model performance?
 
 We tried to increase the model performance by dropping more columns, creating more bins for rare occurances in columns, decreasing the number of values in some bins, adding more neurons to the hidden layers, using a differnet activation function, and increasing the number of epochs. Desiging the model and creating a callback that saves the model's weights every 5 epochs. We tried more hidden layers and increased epochs to 100 to increase model performance.Columns were reviewed and the STATUS and SPECIAL_CONSIDERATIONS columns were dropped as well as increasing the number of neurons and layers. Other activations were tried such as tanh.Linear activation produced the worst accuracy, around 28%. The relu activation at the early layers , tanh activation in the middle and sigmoid activation at the latter layers gave the best results.
